@@ -9,6 +9,7 @@ Tries to do two simple things:
 * a linux OS
 * [mpv](http://mpv.io) player
 * python with [subliminal](https://github.com/Diaoul/subliminal) (version(s) 1.0.1+ work fine, older will not). [ *pip* for easy peasy installation is recommended]
+  * for usage of all subtitles provider, install subliminal from `develop` branch
 
 ###### Using
 * copy script to ~/.config/mpv/scripts (for some older versions than 0.9.2 it will propably be a slight different path; check [here](http://mpv.io/manual/master/#files))

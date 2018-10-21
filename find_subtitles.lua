@@ -39,7 +39,9 @@ function find_subtitles()
 			fp .. "'"
 	)
 	-- you can also use this if you join addict7d (replace user and pass with yours; use no quotes just the strings)
-	-- local ss = os.capture("subliminal --addic7ed user pass download --provider addic7ed --provider opensubtitles --provider podnapisi --provider thesubdb --provider tvsubtitles -l en -v '" .. fp .. "'")
+	-- local ss = os.capture("--addic7ed user pass --opensubtitles user pass download " ..
+	-- 	"--provider addic7ed --provider opensubtitles --provider podnapisi --provider thesubdb --provider tvsubtitles --provider shooter " ..
+	-- 	"--refiner metadata --refiner omdb --refiner tvdb -l en -v" .. fp .. "'")
 
 	-- strip unnecessary info (as of subliminal version 1.0.1 the string matchings below are working ... dont know for how long though
 	ss = string.gsub(ss, "(Collecting videos)", "")
